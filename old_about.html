@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me (millions)</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/gdicon.ico">
+      <style>
+      body {
+        background-image: url(rock.png);
+        color: white;
+      }
+      a {
+  color: white;
+}
+      </style>
+  </head>
+  <body>
+<center><img src="millions.gif" alt="millions"><br>
+<a href="index">home</a> <a href="about">about me</a>
+<h1> Hi! I'm millions! </h1>
+I'm a content creator, and I mostly make Minecraft and Geometry Dash content.<br>
+(the rest of this is copy pasted from my Twitch)<br>
+I upload on YouTube more often than I stream, but when I do stream, you'll find me here.
+
+Also, I'm a minor. Please don't be weird.<br>
+<h2>CHAT RULES</h2><br>
+    English only<br>
+    Don't be a creep<br>
+    Have common sense<br>
+    Don't put personal info in chat<br>
+    Don't say the viewer count in chat<br>
+<a href=https://streamlabs.com/millionsofplayers/>Donate to me!</a><br>
+<h2>PC Specs</h2>
+CPU: AMD Ryzen 5 5600G<br>
+GPU: AMD RX 5500<br>
+RAM: 16GB<br>
+<br>
+Mouse: Logitech G502 HERO<br>
+Keyboard: Corsair K55 RGB<br>
+Monitors: Dell S2421HGF, Dell E207WFP<br>
+<h2>Somewhat Frequently Asked Questions</h2><br>
+<b>How old are you?</b><br>
+<i>I am a minor.</i><br>
+<b>How tall are you?</b><br>
+<i>Sure (like 5 foot 9)</i><br>
+<b>What are your pronouns?</b><br>
+<i>he/him</i><br>
+<b>What are your PC specs?</b><br>
+<i>There's a panel for that</i><br>
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var site_data = JSON.parse(this.responseText);
+        var num_arr = site_data.info.views.toString().split("");
+        var num_str = "";
+        for (i = 0; i < num_arr.length; i++) {
+            num_str += num_arr[i];
+            if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+            var date_str = site_data.info.last_updated;
+            var date_obj = new Date(site_data.info.last_updated);
+            document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
+        }
+        document.getElementById("hitcount").innerHTML = num_str;
+    }
+};
+xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=milllons", true);
+xhttp.send();
+</script>
+<h2>You are Visitor #: <span id="hitcount"></span></h2>
+</center>
+  </body>
+</html>
