@@ -1,4 +1,3 @@
-yooo
-this came from a neocities user's site template this is held together by glue
+code for my website, github pages is free and it also hosts your site as a repo i can add to easily
 
-i barely know how this works
+site right now is ported from neocities, but i'm working on a new page with a 90s asthetic at /test
