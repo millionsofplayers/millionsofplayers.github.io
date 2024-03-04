@@ -2,10 +2,10 @@ h1 {
   font-family: "Trebuchet MS", sans-serif;
 }
 
-div {
+.main {
   background-color: white;
   width:400px;
-  padding:50px;
+  padding:30px;
   margin:20px;
 }
 
@@ -22,3 +22,24 @@ h2 span {
     background:#fff; 
     padding:0 10px; 
 }
+
+/* sidebar code, also taken from w3schools */
+
+ /* The sidebar menu */
+.sidenav {
+  width: 400px; /* Set the width of the sidebar */
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  margin:20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+ /* color: black; */
+  display: inline-block;
+}
+
