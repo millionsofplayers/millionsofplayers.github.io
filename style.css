@@ -1,9 +1,44 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+h1 {
+  font-family: "Trebuchet MS", sans-serif;
+}
 
-body {
-  color: black;
-  font-family: Verdana;
-  background-image: url(Images/star.png);
+.main {
+  background-color: white;
+  width:400px;
+  padding:30px;
+  margin:20px;
+}
+
+/* i don't really know how this works. taken from https://stackoverflow.com/a/5214204 */
+h2 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+/* sidebar code, also taken from w3schools */
+
+ /* The sidebar menu */
+.sidenav {
+  width: 400px; /* Set the width of the sidebar */
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  margin:20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+ /* color: black; */
+  display: inline-block;
 }
